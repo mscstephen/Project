@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-Feb-2012 11:39:43 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="msc2012test" name="H.utility.Users" table="users">
+    <id name="usid" type="java.lang.Integer">
+      <column name="Usid"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="H.utility.Costplan" fetch="select" name="costplan">
+      <column name="CostId"/>
+    </many-to-one>
+    <many-to-one class="H.utility.Totalpower" fetch="select" name="totalpower">
+      <column name="TPID"/>
+    </many-to-one>
+    <many-to-one class="H.utility.Rules" fetch="select" name="rules">
+      <column name="RID"/>
+    </many-to-one>
+    <many-to-one class="H.utility.Teams" fetch="select" name="teams">
+      <column name="TID"/>
+    </many-to-one>
+    <property name="name" type="string">
+      <column length="20" name="Name"/>
+    </property>
+    <property name="level" type="java.lang.Integer">
+      <column name="Level"/>
+    </property>
+  </class>
+</hibernate-mapping>

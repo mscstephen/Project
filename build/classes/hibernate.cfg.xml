@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://143.239.73.126:3306/msc2012test</property>
+    <property name="hibernate.connection.username">steve</property>
+    <property name="hibernate.connection.password">pass</property>
+    <mapping resource="H/utility/Plant.hbm.xml"/>
+    <mapping resource="H/utility/Users.hbm.xml"/>
+    <mapping resource="H/utility/Cpu.hbm.xml"/>
+    <mapping resource="H/utility/Totalpower.hbm.xml"/>
+    <mapping resource="H/utility/Pschedule.hbm.xml"/>
+    <mapping resource="H/utility/Rules.hbm.xml"/>
+    <mapping resource="H/utility/Thermalmap.hbm.xml"/>
+    <mapping resource="H/utility/Health.hbm.xml"/>
+    <mapping resource="H/utility/Processingrate.hbm.xml"/>
+    <mapping resource="H/utility/Mode.hbm.xml"/>
+    <mapping resource="H/utility/Teams.hbm.xml"/>
+    <mapping resource="H/utility/Pmap1.hbm.xml"/>
+    <mapping resource="H/utility/Row.hbm.xml"/>
+    <mapping resource="H/utility/Job.hbm.xml"/>
+    <mapping resource="H/utility/Costplan.hbm.xml"/>
+    <mapping resource="H/utility/Schedule.hbm.xml"/>
+    <mapping resource="H/utility/Pmap2.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
